@@ -1,0 +1,1 @@
+export AddLocationModa from './AddLocationModal';

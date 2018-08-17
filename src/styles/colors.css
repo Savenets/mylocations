@@ -1,0 +1,46 @@
+@value na: "transparent";
+@value white: #fff;
+@value blue: #00254f;
+@value cyan: #00cdeb;
+@value cyanDarken-1: #00acc1;
+@value green: #00c850;
+@value greenLighten-1: #e0f8ea;
+@value red: #ff3232;
+@value yellow: #ff0;
+
+/* Gray Colors */
+@value grayLighten-9: #eeeff0;
+@value grayLighten-8: #edeff0;
+@value grayLighten-7: #f0f1f1;
+@value grayLighten-6: #fefefe;
+@value grayLighten-5: #fafafa;
+@value grayLighten-4: #ececec;
+@value grayLighten-3: #e9e9e9;
+@value grayLighten-2: #e0e0e0;
+@value grayLighten-1: #d2d2d2;
+@value gray #9e9e9e;
+@value grayDarken-1: #9e9e9e;
+@value grayDarken-2: #666666;
+@value grayDarken-3: #212121;
+
+/* Text */
+@value accentText: blue;
+@value accentText2: cyan;
+@value defaultText: grayDarken-2;
+@value primaryText: gray;
+@value secondaryText: grayDarken-3;
+@value link: cyanDarken-1;
+@value textAccentSelection: yellow;
+@value blackText: grayDarken-3;
+@value dangerText: red;
+
+/* Text Field */
+@value textFieldText: grayDarken-3;
+@value textFieldHint: primaryText;
+@value textFieldFloatingLabel: defaultText;
+@value textFieldError: red;
+@value textFieldFocus: accentText2;
+@value textFieldBackground: na;
+@value textFieldBorder: border;
+
+

@@ -1,0 +1,9 @@
+@value gray from "../../styles/colors.css";
+
+.noCategoriesCopy {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}

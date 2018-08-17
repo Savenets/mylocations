@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+}
+
+.categoryItem {
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid gray;
+  min-width: 70vw;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  margin: 4px
+}
+
+.categoryNameCopy {
+  font-size: 2rem;
+}
+
+.iconButton {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import CategoryListItem from './CategoryListItem';
 import { wrapper } from './CategoriesList.css';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { Field } from 'redux-form';
-import { TextField, SelectField } from 'redux-form-material-ui';
+import { TextField } from 'redux-form-material-ui';
 //import { ValidationErrorMessages as validation } from '../../helpers/validation';
 import { actionButtons } from './LocationModalContent.css';
 
@@ -40,12 +40,6 @@ const LocationsModalContent = ({ handleCreateCategory, handleCloseModal }) => {
           fullWidth
         />
       </div>
-      <div>
-
-      </div>
-
-
-
       <div className={actionButtons}>
         <Button style={buttonStyle} variant="contained" onClick={handleCreateCategory} color="primary">Create</Button>
         <Button style={buttonStyle} variant="contained" onClick={handleCloseModal} color="primary">Cancel</Button>

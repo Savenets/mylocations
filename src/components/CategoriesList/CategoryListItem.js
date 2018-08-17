@@ -8,7 +8,6 @@ import { categoryItem, iconButton, categoryNameCopy } from './CategoriesList.css
 
 const CategoryListItem = ({ category, removeCategory }) => {
   const { categoryName } = category;
-
   const removeItemHandler = id => () => removeCategory(id);
 
   return (

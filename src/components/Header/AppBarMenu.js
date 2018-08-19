@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
-const AppBarMenu = ({ anchorEl, isOpened, handleCloseMenu, handleOpenCreateCategoryModal }) => {
+const AppBarMenu = ({ anchorEl, isOpened, handleCloseMenu, handleOpenCreateCategoryModal, handleOpenCreateLocationsModal }) => {
 
   const menuItemStyle = {
     fontSize: 16,
@@ -25,7 +25,7 @@ const AppBarMenu = ({ anchorEl, isOpened, handleCloseMenu, handleOpenCreateCateg
       onClose={handleCloseMenu}
     >
       <MenuItem style={menuItemStyle} onClick={handleOpenCreateCategoryModal}>Create category</MenuItem>
-      <MenuItem style={menuItemStyle} onClick={handleCloseMenu}>Create location</MenuItem>
+      <MenuItem style={menuItemStyle} onClick={handleOpenCreateLocationsModal}>Create location</MenuItem>
     </Menu>
   );
 };
@@ -39,6 +39,7 @@ AppBarMenu.propTypes = {
   isOpened: PropTypes.bool.isRequired,
   handleCloseMenu: PropTypes.func.isRequired,
   handleOpenCreateCategoryModal: PropTypes.func.isRequired,
+  handleOpenCreateLocationsModal: PropTypes.func.isRequired,
 };
 
 export default AppBarMenu;

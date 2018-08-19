@@ -1,3 +1,5 @@
+@value ligntGrayPlus from '../../styles/colors.css';
+
 .headerWrapper {
-  background-color: #6B8796;
+  background-color: ligntGrayPlus;
 }

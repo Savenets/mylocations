@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FormDialog from '../../components/FormDialog';
 import CategoryModalContent from './CategoryModalContent';
 
-const AddCategoryModal = ({ isDialogOpened, handleCloseModal, handleCreateCategory }) => {
+const AddCategoryModal = ({ isDialogOpened, handleCloseModal, handleCreateCategory, ...rest }) => {
 
   return (
     <FormDialog
@@ -14,6 +14,7 @@ const AddCategoryModal = ({ isDialogOpened, handleCloseModal, handleCreateCatego
       <CategoryModalContent
         handleCreateCategory={handleCreateCategory}
         handleCloseModal={handleCloseModal}
+        {...rest}
       />
     </FormDialog>
   );

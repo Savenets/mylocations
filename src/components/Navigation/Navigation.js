@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import CardTravel from '@material-ui/icons/CardTravel';
 import Place from '@material-ui/icons/Place';
 import { cyan, defaultText } from '../../styles/colors.css';
-
 import { navigationItem } from './Navigation.css';
 
 const Navigation = ({ currentRoute }) => {

@@ -1,0 +1,42 @@
+@value gray, accentText2 from "../../styles/colors.css";
+
+.wrapper {
+  position: relative;
+}
+
+.noLocationsCopy {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.map {
+  height: 300px;
+}
+
+.sort {
+  position: absolute;
+  right: 20px;
+}
+
+.locationDescription {
+  background:rgba(255,255,255,0.5);
+  position: relative;
+  top: -207px;
+  left: 9px;
+  width: 280px;
+  min-height: 110px;
+  border-radius: 3px;
+  color: accentText2;
+  text-align: center;
+}
+
+.detailsCopy {
+  font-size: 1.6rem;
+}
+
+.additionalDescriptionTitle {
+  font-size: 2.2rem;
+}

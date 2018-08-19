@@ -8,6 +8,7 @@ export default (initialState = {}, additionalMiddlewares = []) => {
 
   const PATHS = [
     'categories',
+    'locations',
   ];
 
   const slicer = paths => state => _.zipObjectDeep( paths, _.at( state, paths ) );

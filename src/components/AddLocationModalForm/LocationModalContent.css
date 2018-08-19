@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.locationsName {
+  max-width: 256px;
+  margin: 0 8px;
+}
+
+.formAddressLocations {
+  display: flex;
+}

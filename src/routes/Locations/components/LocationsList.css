@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+}
+
+.locationItem {
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  margin: 4px;
+  cursor: pointer;
+  min-width: 600px;
+}
+
+.locationNameCopy {
+  font-size: 1.4rem;
+  padding-left: 8px;
+}
+
+.iconButton {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activeItem {
+  border: 2px solid red;
+}

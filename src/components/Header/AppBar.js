@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MoreVert from '@material-ui/icons/MoreVert';
+import { ligntGrayPlus } from '../../styles/colors.css';
 import AppBarMenuContainer from '../../containers/AppBarMenuContainer';
 
 const styles = {
@@ -19,7 +20,7 @@ const styles = {
   appBarWrapper: {
     display: 'flex',
     alignItems: 'space-between',
-    backgroundColor: '#6b8796',
+    backgroundColor: ligntGrayPlus,
   },
   toolbar: {
     display: 'flex',

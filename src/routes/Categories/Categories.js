@@ -8,7 +8,7 @@ const Categories = ({ categories, removeCategory }) => {
 
   if (categories.length <= 0) {
     return (
-      <h1 className={noCategoriesCopy}>You have no categories yer. Please add some</h1>
+      <h1 className={noCategoriesCopy}>You have no categories yet. Please add some</h1>
     );
   }
 

@@ -1,0 +1,13 @@
+@value primaryText, grayDarken-2, dangerText from "../../styles/colors.css";
+
+.primary {
+  background-color: primaryText;
+}
+
+.success {
+  background-color: grayDarken-2;
+}
+
+.fail {
+  background-color: dangerText;
+}

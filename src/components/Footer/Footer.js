@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
 import NavigationContainer from '../../containers/NavigationContainer';
 
 import { footerWrapper } from './Footer.css';
 
 const Footer = ({ style }) => {
-  const Fragment = React.Fragment;
 
   return (
-    <Fragment>
+    <BottomNavigation style={style} className={footerWrapper}>
       <Divider />
-      <footer className={footerWrapper} style={style}>
-        <NavigationContainer />
-      </footer>
-    </Fragment>
+      <NavigationContainer />
+    </BottomNavigation>
   );
 };
 

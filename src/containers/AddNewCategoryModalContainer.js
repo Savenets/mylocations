@@ -3,6 +3,7 @@ import { createStructuredSelector } from 'reselect';
 import { reduxForm, formValueSelector, reset } from 'redux-form';
 import uniqid from 'uniqid';
 import CategoryActions from '../actions/categories';
+import UiActions from '../actions/ui';
 import { isCreateModalOpenSelector } from '../selectors/categories';
 import AddCategoryModalForm from '../components/AddCategoryModalForm';
 
@@ -18,6 +19,7 @@ const mapDispatchToProps = dispatch => ({
   handleCreateCategory: category => dispatch(CategoryActions.createNewCategory(category)),
   handleCloseModal: () => dispatch(CategoryActions.hideCreateModal()),
   resetForm: () => dispatch(reset(CreateNewCategoryFormName)),
+  showSuccessSnackbar: () => dispatch(UiActions.showSuccessSnackbar('New category is created!')),
 });
 
 const mergeProps = (stateProps, dispatchProps, ownProps) => ({
@@ -31,7 +33,9 @@ const mergeProps = (stateProps, dispatchProps, ownProps) => ({
       id: uniqid(),
     };
     dispatchProps.handleCreateCategory(newCategory);
+    dispatchProps.handleCloseModal();
     dispatchProps.resetForm();
+    dispatchProps.showSuccessSnackbar();
   },
   handleCloseModal: () => {
     dispatchProps.handleCloseModal();

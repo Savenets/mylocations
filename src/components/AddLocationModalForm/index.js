@@ -1,1 +1,1 @@
-export AddLocationModa from './AddLocationModal';
+export default from './AddLocationModal';

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
+import SnackbarContainer from '../containers/SnackbarContainer';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 import styles from './Layout.css';
 
 const Layout = ({ children, theme }) => {
@@ -17,6 +16,7 @@ const Layout = ({ children, theme }) => {
         </div>
         <Footer />
       </div>
+      <SnackbarContainer autoHideDuration={3000} />
     </MuiThemeProvider>
   );
 };

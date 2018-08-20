@@ -1,3 +1,5 @@
+@value greenLighten-1 from "../../../styles/colors.css";
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -19,6 +21,10 @@
   min-width: 600px;
 }
 
+.locationItem:focus {
+  background-color: greenLighten-1;
+}
+
 .locationNameCopy {
   font-size: 1.4rem;
   padding-left: 8px;
@@ -34,8 +40,4 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.activeItem {
-  border: 2px solid red;
 }

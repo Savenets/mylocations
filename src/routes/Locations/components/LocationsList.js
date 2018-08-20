@@ -27,7 +27,6 @@ class LocationsList extends React.Component {
           removeLocationHandler={removeLocationHandler}
           editLocationHandler={this.handleEditLocation}
           handleGoogleMapLocationChange={handleGoogleMapLocationChange}
-          isActiveLocationItem={index == this.state.activeLocation ? true : false}
         />)) }
         <EditLocationsContainer
           dialogTitle="Edit Location"

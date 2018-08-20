@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
+import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
 import CardTravel from '@material-ui/icons/CardTravel';
 import Button from '@material-ui/core/Button';
@@ -15,10 +16,17 @@ const LocationListItem = ({ location, removeLocationHandler, editLocationHandler
   const renderCategories = categories => (
     categories.map((category, index) => (<Chip style={{ margin: '0 4px' }} key={index} avatar={<Avatar><CardTravel /></Avatar>} label={category} />)
     ));
+  const paperStyle = {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    padding: 8,
+  };
 
   return (
     <li>
-      <div
+      <Paper
+        style={paperStyle}
         role="button"
         className={locationItem}
         aria-pressed="false"
@@ -34,7 +42,7 @@ const LocationListItem = ({ location, removeLocationHandler, editLocationHandler
           <Button onClick={editLocationHandlerInset(index)}>Edit</Button>
           <Button onClick={removeItemHandler(id)}>Remove</Button>
         </div>
-      </div>
+      </Paper>
     </li>
   );
 };

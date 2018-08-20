@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Place from '@material-ui/icons/Place';
+import Paper from '@material-ui/core/Paper';
+import CardTravel from '@material-ui/icons/CardTravel';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 
@@ -9,16 +10,24 @@ import { categoryItem, iconButton, categoryNameCopy } from './CategoriesList.css
 const CategoryListItem = ({ category, removeCategory }) => {
   const { categoryName } = category;
   const removeItemHandler = id => () => removeCategory(id);
+  const paperStyle = {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    padding: 8,
+  };
 
   return (
     <li className={categoryItem}>
-      <Place />
-      <p className={categoryNameCopy}>{categoryName}</p>
-      <div className={iconButton}>
-        <IconButton onClick={removeItemHandler(category.id)} aria-label="Delete">
-          <DeleteIcon />
-        </IconButton>
-      </div>
+      <Paper style={paperStyle}>
+        <CardTravel />
+        <p className={categoryNameCopy}>{categoryName}</p>
+        <div className={iconButton}>
+          <IconButton onClick={removeItemHandler(category.id)} aria-label="Delete">
+            <DeleteIcon />
+          </IconButton>
+        </div>
+      </Paper>
     </li>
   );
 };

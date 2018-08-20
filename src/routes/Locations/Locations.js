@@ -68,6 +68,8 @@ class Locations extends React.Component {
         />
         <div className={sort}>
           <IconButton
+            color="primary"
+            aria-label="Sort"
             onClick={this.sortData}
           >
             <SortByAlpha />

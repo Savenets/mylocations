@@ -15,8 +15,8 @@ const Layout = ({ children, theme }) => {
           {children}
         </div>
         <Footer />
+        <SnackbarContainer autoHideDuration={3000} />
       </div>
-      <SnackbarContainer autoHideDuration={3000} />
     </MuiThemeProvider>
   );
 };
